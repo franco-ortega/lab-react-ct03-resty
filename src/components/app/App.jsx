@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../header/Header';
 import PastRequestList from '../pastRequests/PastRequestList';
 import Request from '../requests/Request';
 import Response from '../response/Response';
@@ -8,7 +9,7 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <h1>RESTy</h1>
+        <Header />
         <div className={styles.App}>
           <div>
             <PastRequestList />
