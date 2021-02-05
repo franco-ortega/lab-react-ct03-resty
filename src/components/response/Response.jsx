@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import styles from './Response.css';
 
 export default function Response({ response }) {
-  console.log('helloooo');
-  console.log(response);
+  // console.log('helloooo');
+  // console.log(response);
   return (
     <div>
       <section className={styles.Response}>
