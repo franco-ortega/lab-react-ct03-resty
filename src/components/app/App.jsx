@@ -7,15 +7,18 @@ import styles from './App.css';
 export default class App extends Component {
   render() {
     return (
-      <div className={styles.App}>
-        <div>
-          <PastRequestList />
+      <>
+        <h1>RESTy</h1>
+        <div className={styles.App}>
+          <div>
+            <PastRequestList />
+          </div>
+          <div>
+            <Request />
+            <Response />
+          </div>
         </div>
-        <div>
-          <Request />
-          <Response />
-        </div>
-      </div>
+      </>
     );
   }
 }
