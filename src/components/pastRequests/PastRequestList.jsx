@@ -6,7 +6,7 @@ export default class PastRequestList extends Component {
   render() {
     return (
       <section className={styles.PastRequestList}>
-        These are your past requests:
+        <p>These are your past requests:</p>
         <PastRequest />
       </section>
     );

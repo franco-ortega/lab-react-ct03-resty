@@ -1,8 +1,11 @@
 .Response {
-    margin: 20px 50px;
-    padding: 10px;
-    height: 50vh;
+    background-color: white;
 
-    border: solid 3px gray;
+    margin: 1vmax;
+    padding: 10px;
+    height: 80vh;
+    width: 33vw;
+
+    border: solid 3px black;
     border-radius: 10px;
 }

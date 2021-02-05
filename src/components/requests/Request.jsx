@@ -6,20 +6,34 @@ export default class Request extends Component {
     return (
       <>
         <form className={styles.Request}>
-          <label htmlFor="endpoint">URL/Endpoint:</label>
-          <input id="endpoint" type="text"/>
+          <label htmlFor="endpoint">
+            URL
+            <input id="endpoint" type="text"/>
+          </label>
+
           <p>
-            <label htmlFor="post">POST</label>
-            <input id="post" type="radio" name="method"/>
-            <label htmlFor="get">GET</label>
-            <input id="get" type="radio" name="method"/>
-            <label htmlFor="put">PUT</label>
-            <input id="put" type="radio" name="method"/>
-            <label htmlFor="delete">DELETE</label>
-            <input id="delete" type="radio" name="method"/>
+            <label htmlFor="post">
+              POST
+              <input id="post" type="radio" name="method"/>
+            </label>
+            <label htmlFor="get">
+              GET
+              <input id="get" type="radio" name="method"/>
+            </label>
+            <label htmlFor="put">
+              PUT
+              <input id="put" type="radio" name="method"/>
+            </label>
+            <label htmlFor="delete">
+              DELETE
+              <input id="delete" type="radio" name="method"/>
+            </label>
           </p>
-          <label htmlFor="data">Enter Data:</label>
-          <textarea id="data" type="text" rows="10" cols="50"/>
+
+          <label htmlFor="data">
+            <p>Enter Data</p>
+            <textarea id="data" type="text" rows="15" cols="50"/>
+          </label>
 
           <button>Submit</button>
         </form>

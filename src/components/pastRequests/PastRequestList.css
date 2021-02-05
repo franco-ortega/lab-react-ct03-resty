@@ -1,8 +1,12 @@
 .PastRequestList {
-    margin: 10px;
-    padding: 5px;
+    background-color: purple;
+    color: lightblue;
 
-    border: solid 2px purple;
+    margin: 1vmax;
+    padding: 5px;
+    height: 80vh;
+    width: 20vw;
+
+    border: solid 3px black;
     border-radius: 10px;
-    height: 100vh;
 }

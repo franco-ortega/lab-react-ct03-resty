@@ -4,10 +4,13 @@
     padding: 0;
 }
 
-.App {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+body {
+    background-color: lightgray;
+}
 
-    
+.App {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }

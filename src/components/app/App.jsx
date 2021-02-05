@@ -16,6 +16,8 @@ export default class App extends Component {
           </div>
           <div>
             <Request />
+          </div>
+          <div>
             <Response />
           </div>
         </div>
