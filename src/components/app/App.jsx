@@ -6,7 +6,12 @@ import Response from '../response/Response';
 import styles from './App.css';
 
 export default class App extends Component {
+  state = {
+    response: []
+  }
+
   render() {
+    // console.log(this.state.response);
     return (
       <>
         <Header />
@@ -18,7 +23,7 @@ export default class App extends Component {
             <Request />
           </div>
           <div>
-            <Response />
+            <Response response={this.state.response}/>
           </div>
         </div>
       </>

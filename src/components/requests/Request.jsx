@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { makeRequest } from '../../services/makeRequest';
+import Response from '../response/Response';
 import styles from './Request.css';
 
 export default class Request extends Component {
@@ -6,30 +8,21 @@ export default class Request extends Component {
     url: '',
     method: '',
     data: {},
-    response: {}
+    response: []
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log('form submitted');
+    // console.log('form submitted');
+    const { url, method, data } = this.state;
 
-    this.setState({ response: 'test response' });
+    makeRequest(url, method, data)
+      .then(response => this.setState({ response }));
 
-    // get URL input value | get state or update state
-    // get radio button selection | get state or update state
-    // get Data textarea value | get state or update state
-
-    // call makeRequest() with the above values
-
-    // update response state
-    // response state is displayed in Response Field (set up automatically)
-    // --Response.jsx will already be displaying response state
-
-    // url and method sent to PastRequest
+    // url and method used to create PastRequest
   }
 
   handleUrlChange = ({ target }) => {
-
     this.setState({ url: target.value });
   }
   handleRadioChange = ({ target }) => {
@@ -113,6 +106,8 @@ export default class Request extends Component {
 
           <button>Submit</button>
         </form>
+
+        {/* <Response response={this.state.response} /> */}
 
       </>
     );

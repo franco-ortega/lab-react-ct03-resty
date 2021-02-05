@@ -1,7 +1,10 @@
 export const makeRequest = async(url, method, data) => {
   return await fetch(`${url}`, {
     method: `${method}`,
-    body: JSON.stringify(`${data}`)
   })
     .then(res => res.json());
 };
+
+
+// refer to screenshots from start of Thursday to handle different requests (?)
+//body: JSON.stringify(`${data}`)
