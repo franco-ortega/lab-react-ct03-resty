@@ -7,23 +7,29 @@ import styles from './App.css';
 
 export default class App extends Component {
   state = {
+    url: '',
+    method: '',
     response: []
   }
 
   render() {
     // console.log(this.state.response);
+    const { url, method, response } = this.state;
     return (
       <>
         <Header />
         <div className={styles.App}>
           <div>
-            <PastRequestList />
+            <PastRequestList
+              method={method}
+              url={url}
+            />
           </div>
           <div>
             <Request />
           </div>
           <div>
-            <Response response={this.state.response}/>
+            <Response response={response}/>
           </div>
         </div>
       </>
