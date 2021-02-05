@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import styles from './Request.css';
 
 export default class Request extends Component {
   render() {
     return (
       <>
-        <form action="">
+        <form className={styles.Request}>
           <label htmlFor="endpoint">URL/Endpoint:</label>
           <input id="endpoint" type="text"/>
           <p>
@@ -18,7 +19,7 @@ export default class Request extends Component {
             <input id="delete" type="radio" name="method"/>
           </p>
           <label htmlFor="data">Enter Data:</label>
-          <input id="data" type="text"/>
+          <textarea id="data" type="text" rows="10" cols="50"/>
 
           <button>Submit</button>
         </form>
