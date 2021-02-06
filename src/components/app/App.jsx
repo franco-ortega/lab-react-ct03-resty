@@ -12,7 +12,10 @@ export default class App extends Component {
     method: '',
     data: [],
     response: [],
-    pastRequests: []
+    pastRequests: [
+      [{ method: 'GET' }, { url: 'http://www.hello.com' }],
+      [{ method: 'POST' }, { url: 'http://www.world.com' }]
+    ]
   }
 
   handleUrlChange = ({ target }) => {
@@ -41,16 +44,17 @@ export default class App extends Component {
 
 
   render() {
-    // console.log(this.state.response);
-    const { url, method, response } = this.state;
+    const { url, method, response, pastRequests } = this.state;
+    console.log('URL: ' + url);
+    console.log('method: ' + method);
+    console.log(response);
     return (
       <>
         <Header />
         <div className={styles.App}>
           <div>
             <PastRequestList
-              method={method}
-              url={url}
+              pastRequests={pastRequests}
             />
           </div>
           <div>

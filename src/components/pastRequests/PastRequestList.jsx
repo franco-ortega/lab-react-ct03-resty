@@ -1,21 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PastRequest from './PastRequest';
-import styles from './PastRequestList.css';
+// import styles from './PastRequestList.css';
 
-export default function PastRequestList({ method, url }) {
-  return (
-    <section className={styles.PastRequestList}>
-      <p>These are your past requests:</p>
+const PastRequestList = ({ pastRequests }) => {
+  const pastRequestElements = pastRequests.map((pastRequest, index) => (
+    <li key={index + Date.now()}>
       <PastRequest
-        method={method}
-        url={url}
+        {...pastRequest}
       />
-    </section>
+    </li>
+  ));
+  
+  return (
+    <ul>
+      {pastRequestElements}
+    </ul>
+
   );
-}
+  
+};
 
 PastRequestList.propTypes = {
-  method: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  // method: PropTypes.string.isRequired,
+  // url: PropTypes.string.isRequired,
+  pastRequests: PropTypes.array.isRequired
 };
+
+export default PastRequestList;
