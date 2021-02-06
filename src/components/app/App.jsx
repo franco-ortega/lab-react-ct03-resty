@@ -12,10 +12,7 @@ export default class App extends Component {
     method: '',
     data: [],
     response: [],
-    pastRequests: [
-      { method: 'GET', url: 'http://www.hello.com' },
-      { method: 'POST', url: 'http://www.world.com' }
-    ]
+    pastRequests: []
   }
 
   handleUrlChange = ({ target }) => {
@@ -39,6 +36,13 @@ export default class App extends Component {
       .then(response => this.setState({ response }));
 
     // url and method used to create PastRequest
+
+    const newRequest = {
+      method: this.state.method,
+      url: this.state.url
+    };
+
+    this.state.pastRequests.push(newRequest);
   }
 
 
