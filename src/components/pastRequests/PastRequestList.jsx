@@ -4,12 +4,9 @@ import PastRequest from './PastRequest';
 import styles from './PastRequestList.css';
 
 const PastRequestList = ({ pastRequests }) => {
-  console.log(pastRequests);
   const pastRequestElements = pastRequests.map((pastRequest, index) => (
     <li key={index + Date.now()}>
-      <PastRequest
-        method={pastRequest.method}
-        url={pastRequest.url}
+      <PastRequest {...pastRequest}
       />
     </li>
   ));
@@ -18,14 +15,10 @@ const PastRequestList = ({ pastRequests }) => {
     <ul className={styles.PastRequestList}>
       {pastRequestElements}
     </ul>
-
   );
-  
 };
 
 PastRequestList.propTypes = {
-  // method: PropTypes.string.isRequired,
-  // url: PropTypes.string.isRequired,
   pastRequests: PropTypes.array.isRequired
 };
 
