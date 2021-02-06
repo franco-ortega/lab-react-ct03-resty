@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PastRequest from './PastRequest';
-// import styles from './PastRequestList.css';
+import styles from './PastRequestList.css';
 
 const PastRequestList = ({ pastRequests }) => {
   console.log(pastRequests);
@@ -15,7 +15,7 @@ const PastRequestList = ({ pastRequests }) => {
   ));
   
   return (
-    <ul>
+    <ul className={styles.PastRequestList}>
       {pastRequestElements}
     </ul>
 
