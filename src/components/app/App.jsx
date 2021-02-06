@@ -56,24 +56,21 @@ export default class App extends Component {
     return (
       <>
         <Header />
+        
         <div className={styles.App}>
-          <div>
-            <PastRequestList
-              pastRequests={pastRequests}
-            />
-          </div>
-          <div>
-            <Request
-              handleUrlChange={this.handleUrlChange}
-              handleRadioChange={this.handleRadioChange}
-              handleDataChange={this.handleDataChange}
-              handleSubmit={this.handleSubmit}
-            />
-          </div>
-          <div>
-            <Response response={response}/>
-          </div>
+          <PastRequestList
+            pastRequests={pastRequests}
+          />
+          <Request
+            handleUrlChange={this.handleUrlChange}
+            handleRadioChange={this.handleRadioChange}
+            handleDataChange={this.handleDataChange}
+            handleSubmit={this.handleSubmit}
+          /> 
         </div>
+        
+        <Response response={response}/>
+        
       </>
     );
   }

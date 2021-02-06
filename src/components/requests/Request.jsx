@@ -66,7 +66,7 @@ export default function Request({
           <textarea
             id="data"
             type="text"
-            rows="15"
+            rows="10"
             cols="50"
             placeholder="JSON {}"
             onChange={handleDataChange}
