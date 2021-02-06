@@ -11,7 +11,7 @@ const Response = ({ response }) => {
       </section>        
     </div>
   );
-}
+};
 
 Response.propTypes = {
   response: PropTypes.array.isRequired
