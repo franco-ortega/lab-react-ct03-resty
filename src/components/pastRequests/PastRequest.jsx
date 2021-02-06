@@ -6,10 +6,10 @@ export default function PastRequest({ method, url }) {
   return (
     <div className={styles.PastRequest}>
       <p>
-        Method: {method}
+        {method}
       </p>
       <p>
-        URL: {url}
+        {url}
       </p>
     </div>
   );
