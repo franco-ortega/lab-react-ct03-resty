@@ -1,8 +1,8 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './Response.css';
 
-export default function Response({ response }) {
+const Response = ({ response }) => {
   return (
     <div>
       <section className={styles.Response}>
@@ -13,6 +13,8 @@ export default function Response({ response }) {
   );
 }
 
-// Response.propTypes = {
-//   response: PropTypes.array
-// };
+Response.propTypes = {
+  response: PropTypes.array.isRequired
+};
+
+export default Response;
