@@ -13,8 +13,8 @@ export default class App extends Component {
     data: [],
     response: [],
     pastRequests: [
-      [{ method: 'GET' }, { url: 'http://www.hello.com' }],
-      [{ method: 'POST' }, { url: 'http://www.world.com' }]
+      { method: 'GET', url: 'http://www.hello.com' },
+      { method: 'POST', url: 'http://www.world.com' }
     ]
   }
 
@@ -45,9 +45,10 @@ export default class App extends Component {
 
   render() {
     const { url, method, response, pastRequests } = this.state;
-    console.log('URL: ' + url);
-    console.log('method: ' + method);
-    console.log(response);
+    // console.log('URL: ' + url);
+    // console.log('method: ' + method);
+    // console.log(response);
+    console.log(pastRequests);
     return (
       <>
         <Header />

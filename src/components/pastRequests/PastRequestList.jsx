@@ -4,10 +4,12 @@ import PastRequest from './PastRequest';
 // import styles from './PastRequestList.css';
 
 const PastRequestList = ({ pastRequests }) => {
+  console.log(pastRequests);
   const pastRequestElements = pastRequests.map((pastRequest, index) => (
     <li key={index + Date.now()}>
       <PastRequest
-        {...pastRequest}
+        method={pastRequest.method}
+        url={pastRequest.url}
       />
     </li>
   ));

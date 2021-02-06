@@ -2,24 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './PastRequest.css';
 
-export default function PastRequest({ pastRequest }) {
-  console.log(pastRequest);
+export default function PastRequest({ method, url }) {
   return (
     <div className={styles.PastRequest}>
       <p>
-        Method: {pastRequest}
+        Method: {method}
       </p>
       <p>
-        URL: {pastRequest}
+        URL: {url}
       </p>
     </div>
   );
 }
 
 PastRequest.propTypes = {
-  // method: PropTypes.string.isRequired,
-  // url: PropTypes.string.isRequired,
-  pastRequest: PropTypes.array
+  method: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
+  // pastRequest: PropTypes.array
 };
 
 

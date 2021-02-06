@@ -3,8 +3,6 @@ import React from 'react';
 import styles from './Response.css';
 
 export default function Response({ response }) {
-  // console.log('helloooo');
-  console.log(response);
   return (
     <div>
       <section className={styles.Response}>
