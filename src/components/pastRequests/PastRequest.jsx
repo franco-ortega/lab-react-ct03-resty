@@ -18,7 +18,6 @@ export default function PastRequest({ method, url }) {
 PastRequest.propTypes = {
   method: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired
-  // pastRequest: PropTypes.array
 };
 
 
