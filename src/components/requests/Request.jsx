@@ -2,14 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Request.css';
 
-export default function Request({
+const Request = ({
   handleUrlChange, 
   handleRadioChange, 
   handleDataChange,
-  handleSubmit }) {
+  handleSubmit }) => {
   return (
     <>
       <form
+        data-testid="display"
         className={styles.Request}
         onSubmit={handleSubmit}>
         <label htmlFor="endpoint">
@@ -77,11 +78,13 @@ export default function Request({
       </form>
     </>
   );
-}
+};
 
 Request.propTypes = {
-  handleUrlChange: PropTypes.func,
-  handleRadioChange: PropTypes.func,
-  handleDataChange: PropTypes.func,
-  handleSubmit: PropTypes.func,
+  handleUrlChange: PropTypes.func.isRequired,
+  handleRadioChange: PropTypes.func.isRequired,
+  handleDataChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired
 };
+
+export default Request;

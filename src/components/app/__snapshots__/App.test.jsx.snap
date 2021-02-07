@@ -15,6 +15,7 @@ exports[`App component renders App 1`] = `
     />
     <form
       class="Request"
+      data-testid="display"
     >
       <label
         for="endpoint"
