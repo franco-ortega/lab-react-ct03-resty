@@ -6,14 +6,11 @@
 
 body {
     background-color: lightgray;
-    /* display: flex; */
 }
 
 .App {
     background-color: lightgray;
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     margin: auto;
-    /* float: left; */
 }

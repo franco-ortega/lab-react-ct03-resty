@@ -22,7 +22,6 @@ const Request = ({
             onChange={handleUrlChange}
           />
         </label>
-
         <p>
           <label htmlFor="post">
               POST
@@ -61,7 +60,6 @@ const Request = ({
               onChange={handleRadioChange}/>
           </label>
         </p>
-
         <label>
           <p>Enter Data</p>
           <textarea
@@ -73,7 +71,6 @@ const Request = ({
             onChange={handleDataChange}
           />
         </label>
-
         <button>Submit</button>
       </form>
     </>
