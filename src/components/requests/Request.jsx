@@ -13,7 +13,7 @@ const Request = ({
         data-testid="display"
         className={styles.Request}
         onSubmit={handleSubmit}>
-        <label htmlFor="endpoint">
+        <label>
             URL
           <input
             id="endpoint"
@@ -62,7 +62,7 @@ const Request = ({
           </label>
         </p>
 
-        <label htmlFor="data">
+        <label>
           <p>Enter Data</p>
           <textarea
             id="data"

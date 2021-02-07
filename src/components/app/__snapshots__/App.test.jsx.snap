@@ -17,9 +17,7 @@ exports[`App component renders App 1`] = `
       class="Request"
       data-testid="display"
     >
-      <label
-        for="endpoint"
-      >
+      <label>
         URL
         <input
           id="endpoint"
@@ -73,9 +71,7 @@ exports[`App component renders App 1`] = `
           />
         </label>
       </p>
-      <label
-        for="data"
-      >
+      <label>
         <p>
           Enter Data
         </p>
