@@ -10,7 +10,6 @@
     border-style: solid;
     border-color: black;
     border-width: 5px 5px 5px 10px;
-    /* border-radius: 10px; */
 
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;

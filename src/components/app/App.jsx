@@ -29,13 +29,10 @@ export default class App extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log('form submitted');
     const { url, method, data } = this.state;
 
     makeRequest(url, method, data)
       .then(response => this.setState({ response }));
-
-    // url and method used to create PastRequest
 
     const newRequest = {
       method: this.state.method,
@@ -45,18 +42,11 @@ export default class App extends Component {
     this.state.pastRequests.push(newRequest);
   }
 
-
-
   render() {
-    const { url, method, response, pastRequests } = this.state;
-    // console.log('URL: ' + url);
-    // console.log('method: ' + method);
-    // console.log(response);
-    console.log(pastRequests);
+    const { response, pastRequests } = this.state;
     return (
       <>
         <Header />
-        
         <div className={styles.App}>
           <PastRequestList
             pastRequests={pastRequests}
@@ -68,9 +58,7 @@ export default class App extends Component {
             handleSubmit={this.handleSubmit}
           /> 
         </div>
-        
         <Response response={response}/>
-        
       </>
     );
   }
