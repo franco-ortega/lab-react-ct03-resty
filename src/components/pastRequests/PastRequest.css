@@ -1,0 +1,9 @@
+.PastRequest {
+    background-color: gray;
+    color: lightpink;
+    margin: 10px;
+    padding: 5px;
+    border: solid 1px pink;
+    border-radius: 10px;
+    word-wrap: break-word;
+}

@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<DocumentFragment>
+  <h1
+    class="Header"
+  >
+    RESTy
+  </h1>
+  <div
+    class="App"
+  >
+    <ul
+      class="PastRequestList"
+    />
+    <form
+      class="Request"
+      data-testid="display"
+    >
+      <label>
+        URL
+        <input
+          id="endpoint"
+          placeholder="http://"
+          type="text"
+        />
+      </label>
+      <p>
+        <label
+          for="post"
+        >
+          POST
+          <input
+            id="post"
+            name="method"
+            type="radio"
+            value="POST"
+          />
+        </label>
+        <label
+          for="get"
+        >
+          GET
+          <input
+            id="get"
+            name="method"
+            type="radio"
+            value="GET"
+          />
+        </label>
+        <label
+          for="put"
+        >
+          PUT
+          <input
+            id="put"
+            name="method"
+            type="radio"
+            value="PUT"
+          />
+        </label>
+        <label
+          for="delete"
+        >
+          DELETE
+          <input
+            id="delete"
+            name="method"
+            type="radio"
+            value="DELETE"
+          />
+        </label>
+      </p>
+      <label>
+        <p>
+          Enter Data
+        </p>
+        <textarea
+          cols="50"
+          id="data"
+          placeholder="JSON {}"
+          rows="10"
+          type="text"
+        />
+      </label>
+      <button>
+        Submit
+      </button>
+    </form>
+  </div>
+  <div>
+    <section
+      class="Response"
+    >
+      Response Field
+      <pre>
+        []
+      </pre>
+    </section>
+  </div>
+</DocumentFragment>
+`;
